@@ -1,0 +1,7 @@
+booking_form.form:
+  path: '/booking'
+  defaults:
+    _form: '\Drupal\booking_form\Form\BookingForm'
+    _title: 'Booking Form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,54 @@
+<?php
+function signup_schema(){
+  $schema['signup']=array(
+    'fields'=>array(
+      'id'=>array(
+      'type'=>'serial',
+      'not null' => TRUE,
+     ),
+
+      'name'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+        ),
+       'mobilenumber'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+          'not null' => TRUE,
+        ),
+      'email'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+        ),
+        'username'=>array(
+          'type'=>'varchar',
+          'length'=>10,
+          'not null'=>TRUE,
+        ),
+        'dob'=>array(
+         'type' => 'varchar',
+         'length' => 25,
+         'not null' => TRUE,
+        ),
+       'gender'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+          'not null' => TRUE,
+        ),
+        'password'=>array(
+          'type'=>'password',
+          'length'=>10,
+          'not null'=>TRUE,
+        ),
+        'confirm_password'=>array(
+          'type'=>'password',
+          'length'=>10,
+          'not null'=>True,
+        ),
+      ),
+    'primary key' => array('id'),
+  );
+    return $schema;
+  }

@@ -1,0 +1,5 @@
+name: Booking block
+type: module
+description: Defines a custom block
+core: 8.x
+package: custom

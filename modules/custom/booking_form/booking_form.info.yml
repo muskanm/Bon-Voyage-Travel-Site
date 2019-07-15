@@ -1,0 +1,5 @@
+name: Booking Form
+description: 'A booking form.'
+core: 8.x
+package: Custom
+type: module
