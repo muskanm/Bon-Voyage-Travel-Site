@@ -1,0 +1,9 @@
+uuid: a8d4785e-d258-4209-b457-2adb8a9434d9
+langcode: en
+status: true
+dependencies: {  }
+id: blogs
+label: Blogs
+icon_uuid: null
+description: 'used in Blog content type to  create multiple paragraphs'
+behavior_plugins: {  }

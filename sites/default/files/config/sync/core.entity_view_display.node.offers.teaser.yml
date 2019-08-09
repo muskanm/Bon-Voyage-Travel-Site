@@ -1,0 +1,20 @@
+uuid: 884bc340-25dc-4070-86a1-02d00c665ae6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.offers
+  module:
+    - user
+id: node.offers.teaser
+targetEntityType: node
+bundle: offers
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: fc21b50d-6b33-4090-aac8-3232e6dd7b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arrival_time
+    - node.type.cities
+  module:
+    - time_field
+id: node.cities.field_arrival_time
+field_name: field_arrival_time
+entity_type: node
+bundle: cities
+label: 'Arrival Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

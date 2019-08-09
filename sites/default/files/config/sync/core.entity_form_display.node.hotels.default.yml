@@ -1,0 +1,94 @@
+uuid: ae95cd22-ebc9-49a5-b2b4-c5659662fe60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotels.field_about
+    - field.field.node.hotels.field_address
+    - field.field.node.hotels.field_features
+    - field.field.node.hotels.field_gmap
+    - field.field.node.hotels.field_hotel_image
+    - field.field.node.hotels.field_price_of_room
+    - field.field.node.hotels.field_rating
+    - image.style.thumbnail
+    - node.type.hotels
+  module:
+    - image
+    - text
+id: node.hotels.default
+targetEntityType: node
+bundle: hotels
+mode: default
+content:
+  field_about:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_address:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_features:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_gmap:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hotel_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_price_of_room:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rating:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

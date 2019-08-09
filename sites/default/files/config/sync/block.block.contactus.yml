@@ -1,0 +1,31 @@
+uuid: b9f9bc68-8ac0-478f-be98-34c8870c6fb1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8b6ebe4a-9a1e-4d4d-9d83-5859c8d95050'
+  module:
+    - block_content
+    - system
+  theme:
+    - travel_zymphonies_theme
+id: contactus
+theme: travel_zymphonies_theme
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'block_content:8b6ebe4a-9a1e-4d4d-9d83-5859c8d95050'
+settings:
+  id: 'block_content:8b6ebe4a-9a1e-4d4d-9d83-5859c8d95050'
+  label: 'Contact Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

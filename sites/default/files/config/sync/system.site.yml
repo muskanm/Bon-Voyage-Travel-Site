@@ -1,0 +1,15 @@
+uuid: 4fb15c5b-91a6-4dbe-91ba-ccf920c11a5a
+name: BonVoyage.com
+mail: admin@admin.com
+slogan: 'Happy Journey!!'
+page:
+  403: /user/login
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

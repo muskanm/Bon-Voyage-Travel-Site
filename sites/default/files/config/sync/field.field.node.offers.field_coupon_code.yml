@@ -1,0 +1,19 @@
+uuid: 0d89e4ac-a99c-4ac6-bf54-b14a0a9bf779
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coupon_code
+    - node.type.offers
+id: node.offers.field_coupon_code
+field_name: field_coupon_code
+entity_type: node
+bundle: offers
+label: 'Coupon Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

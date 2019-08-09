@@ -1,0 +1,22 @@
+uuid: 1acdae51-70a6-4027-afd9-8e49480533cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: _B1f_g2AR9Q3WHppgYtdlkcAmiPn36wKv9mDyl3Tk04
+id: travel_zymphonies_theme_content
+theme: travel_zymphonies_theme
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

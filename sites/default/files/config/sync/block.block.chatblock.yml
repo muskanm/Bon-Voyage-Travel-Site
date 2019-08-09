@@ -1,0 +1,25 @@
+uuid: 925433ef-b956-417b-b73b-36e39160c891
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1721a5ac-5025-4b5f-b8ec-6abe8d74bf04'
+  module:
+    - block_content
+  theme:
+    - travel_zymphonies_theme
+id: chatblock
+theme: travel_zymphonies_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:1721a5ac-5025-4b5f-b8ec-6abe8d74bf04'
+settings:
+  id: 'block_content:1721a5ac-5025-4b5f-b8ec-6abe8d74bf04'
+  label: 'Chat Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

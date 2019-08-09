@@ -1,0 +1,29 @@
+uuid: 87436d1c-7b4f-4350-b2be-2c15fb6378db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.hotels
+    - taxonomy.vocabulary.city
+id: node.hotels.field_address
+field_name: field_address
+entity_type: node
+bundle: hotels
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

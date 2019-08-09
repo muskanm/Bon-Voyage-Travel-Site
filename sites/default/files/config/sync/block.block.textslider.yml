@@ -1,0 +1,31 @@
+uuid: c42a90a5-f29d-4f7c-b3da-bd6b129eb91f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c83dedb-3286-4ce0-aaed-9fd4fec5eab9'
+  module:
+    - block_content
+    - system
+  theme:
+    - travel_zymphonies_theme
+id: textslider
+theme: travel_zymphonies_theme
+region: primary_menu
+weight: 4
+provider: null
+plugin: 'block_content:6c83dedb-3286-4ce0-aaed-9fd4fec5eab9'
+settings:
+  id: 'block_content:6c83dedb-3286-4ce0-aaed-9fd4fec5eab9'
+  label: 'Text slider'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

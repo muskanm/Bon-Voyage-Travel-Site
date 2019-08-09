@@ -1,0 +1,22 @@
+uuid: 0068d699-b2a2-4f81-837e-bccc724eedfd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: YIhnq8z9K8_6A9K9hyQJoFXz0V_MTsNzvzYK30xbZfQ
+id: travel_zymphonies_theme_breadcrumbs
+theme: travel_zymphonies_theme
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

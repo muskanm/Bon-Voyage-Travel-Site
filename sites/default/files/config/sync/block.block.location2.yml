@@ -1,0 +1,25 @@
+uuid: ddb8375d-c7a9-4fab-98e6-9bc14288ad38
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:fa12819b-8e9a-49d4-a9ad-123fead8b2e0'
+  module:
+    - block_content
+  theme:
+    - travel_zymphonies_theme
+id: location2
+theme: travel_zymphonies_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:fa12819b-8e9a-49d4-a9ad-123fead8b2e0'
+settings:
+  id: 'block_content:fa12819b-8e9a-49d4-a9ad-123fead8b2e0'
+  label: location2
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

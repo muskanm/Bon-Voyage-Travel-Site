@@ -1,0 +1,24 @@
+uuid: 006e80b9-5a1d-4b34-b920-a2a4b39420fc
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.slide_test
+  module:
+    - views
+  theme:
+    - travel_zymphonies_theme
+id: views_block__slide_test_block_1
+theme: travel_zymphonies_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'views_block:slide_test-block_1'
+settings:
+  id: 'views_block:slide_test-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

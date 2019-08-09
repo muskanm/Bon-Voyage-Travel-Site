@@ -1,0 +1,22 @@
+uuid: 3529004e-3854-4196-b262-cc9ae1d141ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: 5kuxPKw90n0MK3ezjd406Kc1teXZGV3nr0hIJYMHjz8
+id: travel_zymphonies_theme_powered
+theme: travel_zymphonies_theme
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

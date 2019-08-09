@@ -1,0 +1,15 @@
+uuid: 8f02725d-68d0-4f28-b17b-18adc9aa522e
+langcode: en
+status: true
+dependencies: {  }
+name: custom_500x500_
+label: custom(500X500)
+effects:
+  08945bb2-4923-4448-ad9a-fc048083f52d:
+    uuid: 08945bb2-4923-4448-ad9a-fc048083f52d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1500
+      height: 300
+      upscale: false

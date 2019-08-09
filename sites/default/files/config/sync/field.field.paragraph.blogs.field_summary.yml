@@ -1,0 +1,19 @@
+uuid: e012d981-ff4e-4cc4-a63b-30577e8c25f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summary
+    - paragraphs.paragraphs_type.blogs
+id: paragraph.blogs.field_summary
+field_name: field_summary
+entity_type: paragraph
+bundle: blogs
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

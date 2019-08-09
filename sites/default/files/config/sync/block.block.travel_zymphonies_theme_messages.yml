@@ -1,0 +1,22 @@
+uuid: 93b83222-4d32-4f37-8e10-2bce8fbbd236
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: 0QmerJJgDJ9RqwNuU3ep2QZOoOgbROXl3hGCZ_n-GWg
+id: travel_zymphonies_theme_messages
+theme: travel_zymphonies_theme
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

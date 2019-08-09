@@ -1,0 +1,24 @@
+uuid: 8c74e74f-dc34-473d-8583-f79ee243f663
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_date
+    - node.type.cities
+  module:
+    - datetime
+id: node.cities.field_journey_date
+field_name: field_journey_date
+entity_type: node
+bundle: cities
+label: 'Journey Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

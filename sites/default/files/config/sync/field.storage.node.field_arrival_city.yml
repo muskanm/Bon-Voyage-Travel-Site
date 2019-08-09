@@ -1,0 +1,20 @@
+uuid: da6daa5f-6cf1-4206-a437-4af69fe119b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_arrival_city
+field_name: field_arrival_city
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

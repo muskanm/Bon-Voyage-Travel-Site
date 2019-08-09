@@ -1,0 +1,28 @@
+uuid: dcb7c60a-c424-43ca-9592-417896d52b31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.info.field_from
+    - node.type.info
+  module:
+    - user
+id: node.info.default
+targetEntityType: node
+bundle: info
+mode: default
+content:
+  field_from:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

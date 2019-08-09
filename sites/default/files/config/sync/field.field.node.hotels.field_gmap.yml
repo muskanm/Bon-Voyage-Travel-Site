@@ -1,0 +1,19 @@
+uuid: 0a1e1469-6d51-46e0-b7b4-ee2b18c29c43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gmap
+    - node.type.hotels
+id: node.hotels.field_gmap
+field_name: field_gmap
+entity_type: node
+bundle: hotels
+label: Gmap
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

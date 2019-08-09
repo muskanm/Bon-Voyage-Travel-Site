@@ -1,0 +1,25 @@
+uuid: a325ff98-199c-4f46-8779-47759b3ff941
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+id: secondary
+theme: travel_zymphonies_theme
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary'
+settings:
+  id: 'system_menu_block:secondary'
+  label: secondary
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

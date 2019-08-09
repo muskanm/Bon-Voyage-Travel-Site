@@ -1,0 +1,97 @@
+uuid: c6447721-6bda-4ac1-a513-3ce1e36ab453
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.cities.field_arrival_city
+    - field.field.node.cities.field_arrival_time
+    - field.field.node.cities.field_company
+    - field.field.node.cities.field_depart_city
+    - field.field.node.cities.field_depart_time
+    - field.field.node.cities.field_journey_date
+    - field.field.node.cities.field_logo
+    - field.field.node.cities.field_price
+    - node.type.cities
+  module:
+    - datetime
+    - image
+    - time_field
+    - user
+id: node.cities.rss
+targetEntityType: node
+bundle: cities
+mode: rss
+content:
+  field_arrival_city:
+    weight: 6
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_arrival_time:
+    weight: 7
+    label: inline
+    settings:
+      time_format: 'h:i a'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+  field_company:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_depart_city:
+    weight: 4
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_depart_time:
+    weight: 5
+    label: inline
+    settings:
+      time_format: 'h:i a'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+  field_journey_date:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: Asia/Kolkata
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_price:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

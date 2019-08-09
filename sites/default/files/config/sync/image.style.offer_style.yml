@@ -1,0 +1,14 @@
+uuid: 21046316-0050-42d4-a7b7-bd87b711286a
+langcode: en
+status: true
+dependencies: {  }
+name: offer_style
+label: 'offer style'
+effects:
+  a3020cfa-bcaf-495e-a8e6-b9a10f931402:
+    uuid: a3020cfa-bcaf-495e-a8e6-b9a10f931402
+    id: image_resize
+    weight: 1
+    data:
+      width: 800
+      height: 600

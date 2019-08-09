@@ -1,0 +1,29 @@
+uuid: 2cf4cae2-71c3-4a4d-b7c6-846b304c53bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arrival_city
+    - node.type.cities
+    - taxonomy.vocabulary.city
+id: node.cities.field_arrival_city
+field_name: field_arrival_city
+entity_type: node
+bundle: cities
+label: 'Arrival City'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      city: city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

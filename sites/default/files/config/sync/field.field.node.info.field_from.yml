@@ -1,0 +1,33 @@
+uuid: ab141fd2-008c-426c-a1d9-5307a8498196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_from
+    - node.type.cities
+    - node.type.info
+  content:
+    - 'node:cities:affbafe3-4abf-429e-8948-d1b320a174d2'
+id: node.info.field_from
+field_name: field_from
+entity_type: node
+bundle: info
+label: From
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: affbafe3-4abf-429e-8948-d1b320a174d2
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cities: cities
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

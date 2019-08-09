@@ -1,0 +1,20 @@
+uuid: 3c6d45c9-c6c0-4290-b222-1d9ead14b71f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.holiday_packages
+  module:
+    - user
+id: node.holiday_packages.teaser
+targetEntityType: node
+bundle: holiday_packages
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

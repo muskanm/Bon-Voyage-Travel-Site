@@ -1,0 +1,18 @@
+uuid: 04688625-9f91-404d-8240-1bd2c402785f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Welcome
+type: welcome
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

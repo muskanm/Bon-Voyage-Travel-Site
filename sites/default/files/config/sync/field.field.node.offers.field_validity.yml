@@ -1,0 +1,21 @@
+uuid: 2a5c0dc3-4753-4168-a80a-48e9ff45257b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_validity
+    - node.type.offers
+  module:
+    - datetime
+id: node.offers.field_validity
+field_name: field_validity
+entity_type: node
+bundle: offers
+label: Validity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

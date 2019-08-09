@@ -1,0 +1,19 @@
+uuid: efd29e98-f136-4d03-9256-677566004a17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_per_person
+    - node.type.holiday_packages
+id: node.holiday_packages.field_price_per_person
+field_name: field_price_per_person
+entity_type: node
+bundle: holiday_packages
+label: 'Price per Person'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

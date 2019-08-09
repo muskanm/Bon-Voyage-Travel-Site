@@ -1,0 +1,19 @@
+uuid: afc2dfb0-a59d-4a7a-aa61-1ddda9963f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rating
+    - node.type.hotels
+id: node.hotels.field_rating
+field_name: field_rating
+entity_type: node
+bundle: hotels
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

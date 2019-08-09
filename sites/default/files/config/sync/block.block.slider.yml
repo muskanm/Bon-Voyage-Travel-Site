@@ -1,0 +1,25 @@
+uuid: ffb56564-7b1c-4123-97a4-7608e486bedc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e3c05ebb-d64b-421f-af11-33296dafdadf'
+  module:
+    - block_content
+  theme:
+    - travel_zymphonies_theme
+id: slider
+theme: travel_zymphonies_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'block_content:e3c05ebb-d64b-421f-af11-33296dafdadf'
+settings:
+  id: 'block_content:e3c05ebb-d64b-421f-af11-33296dafdadf'
+  label: Slider
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

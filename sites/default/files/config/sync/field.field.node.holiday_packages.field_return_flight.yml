@@ -1,0 +1,28 @@
+uuid: c16afe8d-73f0-4997-97ba-d7e2bea59bca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_return_flight
+    - node.type.cities
+    - node.type.holiday_packages
+id: node.holiday_packages.field_return_flight
+field_name: field_return_flight
+entity_type: node
+bundle: holiday_packages
+label: 'Return Flight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cities: cities
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

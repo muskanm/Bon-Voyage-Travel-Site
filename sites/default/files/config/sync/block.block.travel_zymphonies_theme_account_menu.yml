@@ -1,0 +1,27 @@
+uuid: c11842e1-957f-4400-81d4-a7f688ad8f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: j502A4x3RsmWLNVEFLmL8TXEzvk_xr-kiDsKdeZj_r0
+id: travel_zymphonies_theme_account_menu
+theme: travel_zymphonies_theme
+region: auto_hidden_block
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

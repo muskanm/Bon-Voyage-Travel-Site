@@ -1,0 +1,32 @@
+uuid: 5f3890bc-bdb7-4050-b8f9-4e58dc29c568
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slide_test
+  module:
+    - node
+    - views
+  theme:
+    - travel_zymphonies_theme
+id: views_block__slide_test_block_1_2
+theme: travel_zymphonies_theme
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_block:slide_test-block_1'
+settings:
+  id: 'views_block:slide_test-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,22 @@
+uuid: 8f47f942-124d-4be8-81d4-bf97201bda18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_package_details
+    - node.type.holiday_packages
+  module:
+    - text
+id: node.holiday_packages.field_package_details
+field_name: field_package_details
+entity_type: node
+bundle: holiday_packages
+label: 'Package details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

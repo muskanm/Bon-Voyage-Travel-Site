@@ -815,13 +815,11 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     }
 
     /**
-     * Gets all service ids.
-     *
-     * @return array An array of all defined service ids
+     * {@inheritdoc}
      */
     public function getServiceIds()
     {
-        return array_unique(array_merge(array_keys($this->getDefinitions()), array_keys($this->aliasDefinitions), parent::getServiceIds()));
+        return array_map('strval', array_unique(array_merge(array_keys($this->getDefinitions()), array_keys($this->aliasDefinitions), parent::getServiceIds())));
     }
 
     /**
@@ -1527,13 +1525,13 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     }
 
     /**
-     * Adds a removed binding id.
+     * Removes bindings for a service.
      *
-     * @param int $id
+     * @param string $id The service identifier
      *
      * @internal
      */
-    public function addRemovedBindingIds($id)
+    public function removeBindings($id)
     {
         if ($this->hasDefinition($id)) {
             foreach ($this->getDefinition($id)->getBindings() as $key => $binding) {

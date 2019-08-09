@@ -1,0 +1,20 @@
+uuid: 8e7bee5e-3713-4ce2-8db9-3926edfaa0e2
+langcode: en
+status: false
+dependencies:
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: Nhg5ALhxqYOeSlao3QL2phq--xjdyBfT1P5vgkatKqo
+id: travel_zymphonies_theme_page_title
+theme: travel_zymphonies_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

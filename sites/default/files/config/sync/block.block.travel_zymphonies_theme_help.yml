@@ -1,0 +1,22 @@
+uuid: e0e78e87-f8ac-4787-a67b-0dbc08ad84be
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: rqOtQD66TyB0zr5f9RzsBx7TAOgqgTjqQiAe-FouxjU
+id: travel_zymphonies_theme_help
+theme: travel_zymphonies_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

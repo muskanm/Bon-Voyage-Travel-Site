@@ -1,0 +1,38 @@
+uuid: 2816bfa8-5d9c-4093-a1e9-ba90f96b2e5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.users
+  module:
+    - system
+    - user
+  theme:
+    - travel_zymphonies_theme
+id: users
+theme: travel_zymphonies_theme
+region: search
+weight: 0
+provider: null
+plugin: 'system_menu_block:users'
+settings:
+  id: 'system_menu_block:users'
+  label: Users
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,22 @@
+uuid: bc696995-b15b-4905-8b1b-6e3237125293
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - travel_zymphonies_theme
+_core:
+  default_config_hash: qWplKLjRv4SKKWGwiw6otPGxilZoCVfJKuRdiuJ_pZA
+id: travel_zymphonies_theme_search
+theme: travel_zymphonies_theme
+region: search
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
