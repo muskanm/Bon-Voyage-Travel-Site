@@ -1,0 +1,60 @@
+BookingDetails.form:
+  path: '/flights-booking/{nid}'
+  defaults:
+    _form: '\Drupal\BookingDetails\Form\FlightForm'
+    _title: 'Flight booking'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+BookingDetails.form_1:
+  path: '/flights-booking-1'
+  defaults:
+    _form: '\Drupal\BookingDetails\Form\FlightPage'
+    _title: 'Traveller Details'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+BookingDetails.form_2:
+  path: '/flights-payment'
+  defaults:
+    _form: '\Drupal\BookingDetails\Form\FlightPayment'
+    _title: 'Flight Payment'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+BookingDetails.display_table_controller_display:
+  path: '/flightbookingdetails'
+  defaults:
+    _controller: '\Drupal\BookingDetails\Controller\DisplayFlightDetails::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+BookingDetails.display_traveller_controller_display:
+  path: '/flightbooking/travellerdetails/{uid}'
+  defaults:
+    _controller: '\Drupal\BookingDetails\Controller\DisplayTravellerDetails::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+
+BookingDetails.delete_form:
+  path: '/flightbooking/delete/{uid}'
+  defaults:
+    _form: '\Drupal\BookingDetails\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'

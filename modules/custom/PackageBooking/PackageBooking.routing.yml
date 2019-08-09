@@ -1,0 +1,39 @@
+PackageBooking.form:
+  path: '/packagebooking/{nid}'
+  defaults:
+    _form: '\Drupal\PackageBooking\Form\PackageForm'
+    _title: 'Package booking'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+PackageBooking.package_payment_form:
+  path: '/package-payment'
+  defaults:
+    _form: '\Drupal\PackageBooking\Form\PackagePaymentForm'
+    _title: 'hotel payment'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+PackageBooking.display_table_controller_display:
+  path: '/packagebookingdetails'
+  defaults:
+    _controller: '\Drupal\PackageBooking\Controller\DisplayTable::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+PackageBooking.delete_form:
+  path: '/packagebooking/delete/{uid}'
+  defaults:
+    _form: '\Drupal\PackageBooking\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'

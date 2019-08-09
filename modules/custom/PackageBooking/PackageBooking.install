@@ -1,0 +1,112 @@
+
+<?php
+function PackageBooking_schema(){
+  $schema['PackageBooking']=array(
+    'description' => 'The table for storing  data.',
+    'fields'=>array(
+      'id'=>array(
+      'type'=>'serial',
+      'not null' => TRUE,
+     ),
+     'name'=>array(
+     'type' => 'varchar',
+     'length' => 40,
+     'not null' => TRUE,
+     ),
+     'dob'=>array(
+      'type' => 'varchar',
+      'length' => 25,
+      'not null' => TRUE,
+     ),
+     'gender'=>array(
+      'type' => 'varchar',
+      'length' => 40,
+       'not null' => TRUE,
+     ),
+      'Mobile_Number'=>array(
+      'type' => 'varchar',
+      'length' => 40,
+      'not null' => TRUE,
+      ),
+
+      'email'=>array(
+      'type' => 'varchar',
+      'length' => 40,
+      'not null' => TRUE,
+      ),
+      'city'=>array(
+        'type'=>'varchar',
+        'length'=>40,
+        'not null'=>TRUE,
+      ),
+
+      'Persons'=>array(
+        'type'=>'varchar',
+        'length'=>25,
+        'not null'=>TRUE,
+      ),
+      'nid'=>array(
+        'type'=>'varchar',
+        'length'=>20,
+        'not null'=>FALSE,
+      ),
+      'uid' => array(
+        'type'=>'varchar',
+        'length'=>40,
+        'not null'=>FALSE,
+      ),
+   ),
+  'primary key' => array('id'),
+  );
+  $schema['PackagePayment']=array(
+    'description' => 'table for storing info.',
+    'fields'=>array(
+      'id'=>array(
+      'type'=>'serial',
+      'not null' => TRUE,
+     ),
+     'card_type'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'bank'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'name_on_card'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'card_no'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'cvv'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'card_expiry'=>array(
+         'type' => 'varchar',
+         'length' => 40,
+         'not null' => TRUE,
+         ),
+         'nid' => array(
+           'type'=>'varchar',
+           'length'=>40,
+           'not null'=>FALSE,
+         ),
+         'uid' => array(
+           'type'=>'varchar',
+           'length'=>40,
+           'not null'=>FALSE,
+         ),
+      ),
+      'primary key'=>array('id'),
+    );
+    return $schema;
+  }
