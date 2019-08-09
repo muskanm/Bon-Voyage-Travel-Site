@@ -1,0 +1,19 @@
+.tableview table tr td{
+    padding: 60px;
+    background:	#E5E4E2;
+  }
+
+  .tableview thead th{
+    padding: 9px;
+    background:	#E5E4E2;
+  }
+  .tableview tbody td{
+    padding: 9px;
+
+  }
+  .copyright {
+    position: static;
+ }
+  .footer-menu {
+    margin-top: 70px;
+  }

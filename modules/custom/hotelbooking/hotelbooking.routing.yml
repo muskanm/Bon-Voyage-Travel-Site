@@ -1,0 +1,40 @@
+hotelbooking.form:
+  path: '/hotelbooking/{nid}'
+  defaults:
+    _form: '\Drupal\hotelbooking\Form\HotelForm'
+    _title: 'hotel booking'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+
+hotelbooking.hotel_payment_form:
+  path: '/payment'
+  defaults:
+    _form: '\Drupal\hotelbooking\Form\HotelPaymentForm'
+    _title: 'hotel payment'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+hotelbooking.display_table_controller_display:
+  path: '/hotelbookingdetails'
+  defaults:
+    _controller: '\Drupal\hotelbooking\Controller\DisplayTable::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'
+
+hotelbooking.delete_form:
+  path: '/hotelbooking/delete/{uid}'
+  defaults:
+    _form: '\Drupal\hotelbooking\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+    _user_is_logged_in: 'TRUE'

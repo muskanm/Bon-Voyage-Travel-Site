@@ -251,7 +251,8 @@ $databases = [];
  *   ];
  * @endcode
  */
-$config_directories = [];
+$config_directories = array();
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 
 /**
  * Settings:
@@ -777,7 +778,7 @@ $settings['entity_update_backup'] = TRUE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$config_directories['sync'] = 'sites/default/files/config_DOcDFQabPHSahWr6zTuLy1p_wfy1YtLg0NqzNvfbgtWTO3_FcsLVD8qk9X0rZmu8sNicPI78hg/sync';
+$config_directories['sync'] = 'sites/default/files/config/sync';
 $databases['default']['default'] = array (
   'database' => 'test',
   'username' => 'root',

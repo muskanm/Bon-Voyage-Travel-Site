@@ -21,6 +21,7 @@ global-components:
       css/font-awesome.css: {}
       css/custom-style.css: {}
       css/custom-media.css: {}
+      css/tableview.css: {}
   js:
     js/jquery.smartmenus.min.js: {}
     js/custom.js: {}
